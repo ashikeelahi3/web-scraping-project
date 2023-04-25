@@ -93,10 +93,10 @@ const country = teamIdList[0];
 
 (async function () {
   for (let year = 2023; year >= 2010; year--) {
-    if (year == 2023) {
+    if (year != 2023) {
       await setTimeout(() => {
         yearlyList(country.teamId, country.teamName, year, matchList);
-      }, 10000);
+      }, 5000);
     } else {
       await yearlyList(country.teamId, country.teamName, year, matchList);
       flag = 1;
